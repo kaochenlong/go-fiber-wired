@@ -9,9 +9,13 @@ import (
 )
 
 func SetupRoutes(app *fiber.App) {
+	// Static files
+	app.Static("/assets", "./public/assets")
+
 	page := new(controllers.PageController)
 
 	app.Get("/", page.Home)
+	app.Get("/about", page.About)
 }
 
 func SetupWebsocket(app *fiber.App) {

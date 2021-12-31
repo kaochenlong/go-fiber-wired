@@ -9,6 +9,8 @@ import (
 )
 
 func main() {
+	config.BuildAssets()
+
 	app := fiber.New(fiber.Config{
 		Views:         html.New("app/views", ".html"),
 		ViewsLayout:   "layouts/main",
