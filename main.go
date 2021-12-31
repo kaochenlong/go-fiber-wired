@@ -18,6 +18,7 @@ func main() {
 	app.Use(logger.New())
 
 	config.SetupRoutes(app)
+	config.SetupWebsocket(app)
 
 	if err := app.Listen(":3000"); err != nil {
 		panic(err)
