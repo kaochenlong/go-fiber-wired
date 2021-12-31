@@ -1,0 +1,10 @@
+{
+  "name": "go-fiber-wired",
+  "version": "1.0.0",
+  "author": "eddie <eddie@5xcampus.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@hotwired/stimulus": "^3.0.1",
+    "@hotwired/turbo": "^7.1.0"
+  }
+}

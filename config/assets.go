@@ -22,7 +22,6 @@ func BuildAssets() {
 		MinifySyntax:      true,
 		Outfile:           "./public/assets/script.js",
 		Sourcemap:         api.SourceMapLinked,
-		Engines:           browserEngines,
 		Write:             true,
 	})
 
